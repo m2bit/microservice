@@ -1,5 +1,5 @@
 const app = require("express")()
-const external = require("../lib/config")
+const external = require("lib")
 
 app.get('/', (req, res) => {
   res.send('Deu certo! ' + external.resp_service_01())
